@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volar | Tu mejor opción para viajar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Banner promocional -->
+    <div class="promo-banner">
+        <span class="promo-tag">OFERTA ESPECIAL</span>
+        ¡20% de descuento en tu primera reserva! Usa el código: <strong>VOLAR20</strong>
+        <button class="close-banner">&times;</button>
+    </div>
+
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>Volar</h1>
+                <span class="logo-tagline">Viaja sin límites</span>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">Hoteles</a>
+                <a href="#">Vuelos</a>
+                <a href="#">Paquetes</a>
+                <a href="#">Ofertas</a>
+                <a href="#">Actividades</a>
+            </div>
+            <div class="user-actions">
+                <div class="currency-selector">
+                    <span>COP <i class="fas fa-chevron-down"></i></span>
+                </div>
+                <button class="btn-secondary">Registrarse</button>
+                <button class="btn-primary">Iniciar Sesión</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="search-container animate__animated animate__fadeIn">
+                <h2>Encuentra tu hotel ideal</h2>
+                <p class="search-subtitle">Los mejores precios garantizados en más de 100.000 hoteles</p>
+                
+                <div class="search-tabs">
+                    <div class="search-tab active">Hoteles</div>
+                    <div class="search-tab">Vuelos</div>
+                    <div class="search-tab">Paquetes</div>
+                    <div class="search-tab">Actividades</div>
+                </div>
+                
+                <div class="search-box">
+                    <div class="input-group button-like">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <label>Destino</label>
+                        <input type="text" placeholder="¿A dónde vas?">
+                        <div class="dropdown-content">
+                            <div class="dropdown-item">Cartagena <span class="popular-tag">Popular</span></div>
+                            <div class="dropdown-item">San Andrés</div>
+                            <div class="dropdown-item">Santa Marta</div>
+                            <div class="dropdown-item">Medellín</div>
+                            <div class="dropdown-item">Bogotá</div>
+                        </div>
+                    </div>
+                    <div class="input-group button-like">
+                        <i class="fas fa-calendar"></i>
+                        <label>Fechas</label>
+                        <input type="text" placeholder="Selecciona fechas" readonly>
+                        <div class="date-range-display">
+                            <div class="date-display">
+                                <span class="day">15</span>
+                                <span class="month">Nov</span>
+                            </div>
+                            <div class="date-separator">-</div>
+                            <div class="date-display">
+                                <span class="day">20</span>
+                                <span class="month">Nov</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group button-like">
+                        <i class="fas fa-user"></i>
+                        <label>Huéspedes</label>
+                        <input type="text" placeholder="Habitaciones y huéspedes" readonly>
+                        <div class="dropdown-content">
+                            <div class="guest-counter">
+                                <span>Adultos</span>
+                                <div class="counter-controls">
+                                    <button class="counter-btn decrease">-</button>
+                                    <span class="guest-count">2</span>
+                                    <button class="counter-btn increase">+</button>
+                                </div>
+                            </div>
+                            <div class="guest-counter">
+                                <span>Niños</span>
+                                <div class="counter-controls">
+                                    <button class="counter-btn decrease">-</button>
+                                    <span class="guest-count">0</span>
+                                    <button class="counter-btn increase">+</button>
+                                </div>
+                            </div>
+                            <div class="guest-counter">
+                                <span>Habitaciones</span>
+                                <div class="counter-controls">
+                                    <button class="counter-btn decrease">-</button>
+                                    <span class="guest-count">1</span>
+                                    <button class="counter-btn increase">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="search-button">
+                        <i class="fas fa-search"></i> Buscar
+                    </button>
+                </div>
+                <div class="search-options">
+                    <label class="search-option">
+                        <input type="checkbox" checked>
+                        Incluir hoteles con cancelación gratuita
+                    </label>
+                    <label class="search-option">
+                        <input type="checkbox">
+                        Ver precios con impuestos incluidos
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured">
+            <div class="section-header">
+                <h2>Destinos destacados</h2>
+                <p>Descubre los lugares más populares para tu próxima aventura</p>
+            </div>
+            <div class="destinations-grid">
+                <div class="destination-card animate__animated animate__fadeInUp">
+                    <div class="card-badge">Más vendido</div>
+                    <img src="https://images.unsplash.com/photo-1535498730771-e735b998cd64?w=500&q=80" alt="Cartagena">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Cartagena</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.5</span>
+                            </div>
+                        </div>
+                        <div class="card-details">
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Centro histórico</p>
+                            <p class="amenities"><i class="fas fa-wifi"></i> WiFi gratis <i class="fas fa-swimming-pool"></i> Piscina</p>
+                        </div>
+                        <div class="price-container">
+                            <div class="price-info">
+                                <span class="original-price">$250.000</span>
+                                <span class="current-price">$200.000</span>
+                                <span class="price-per-night">por noche</span>
+                            </div>
+                            <div class="discount-badge">-20%</div>
+                        </div>
+                        <a href="#" class="btn-reservar">Reservar ahora</a>
+                    </div>
+                </div>
+                <div class="destination-card animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                    <div class="card-badge">Todo incluido</div>
+                    <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=500&q=80" alt="San Andrés">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>San Andrés</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                        <div class="card-details">
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Playa principal</p>
+                            <p class="amenities"><i class="fas fa-utensils"></i> Desayuno incluido <i class="fas fa-cocktail"></i> Bar</p>
+                        </div>
+                        <div class="price-container">
+                            <div class="price-info">
+                                <span class="original-price">$420.000</span>
+                                <span class="current-price">$350.000</span>
+                                <span class="price-per-night">por noche</span>
+                            </div>
+                            <div class="discount-badge">-17%</div>
+                        </div>
+                        <a href="#" class="btn-reservar">Reservar ahora</a>
+                    </div>
+                </div>
+                <div class="destination-card animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                    <div class="card-badge">Oferta flash</div>
+                    <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=500&q=80" alt="Santa Marta">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Santa Marta</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.0</span>
+                            </div>
+                        </div>
+                        <div class="card-details">
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Rodadero</p>
+                            <p class="amenities"><i class="fas fa-parking"></i> Estacionamiento <i class="fas fa-concierge-bell"></i> Servicio</p>
+                        </div>
+                        <div class="price-container">
+                            <div class="price-info">
+                                <span class="original-price">$230.000</span>
+                                <span class="current-price">$180.000</span>
+                                <span class="price-per-night">por noche</span>
+                            </div>
+                            <div class="discount-badge">-22%</div>
+                        </div>
+                        <a href="#" class="btn-reservar">Reservar ahora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more-container">
+                <a href="#" class="btn-ver-destino">Ver más destinos <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </section>
+
+        <section class="benefits-section">
+            <div class="benefits-container">
+                <div class="section-header">
+                    <h2>¿Por qué reservar con Volar?</h2>
+                    <p>Descubre las ventajas de viajar con nosotros</p>
+                </div>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <i class="fas fa-credit-card"></i>
+                        <h3>Paga en cuotas</h3>
+                        <p>Divide el pago de tu viaje hasta en 12 cuotas sin interés con tarjetas seleccionadas.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Reserva segura</h3>
+                        <p>Tus datos y pagos están protegidos con la más alta tecnología de seguridad.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-headset"></i>
+                        <h3>Atención 24/7</h3>
+                        <p>Nuestro equipo de atención al cliente está disponible para ayudarte en cualquier momento.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-tag"></i>
+                        <h3>Mejor precio garantizado</h3>
+                        <p>Si encuentras un precio más bajo, ¡te igualamos la oferta y te damos un 5% adicional!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="newsletter-container">
+                <div class="newsletter-content">
+                    <h2>¡No te pierdas nuestras mejores ofertas!</h2>
+                    <p>Suscríbete a nuestro boletín y recibe promociones exclusivas directamente en tu correo.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit">Suscribirme</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Volar</h4>
+                <p>Tu mejor opción para viajar. Encuentra los mejores precios en hoteles, vuelos y paquetes turísticos.</p>
+                <div class="app-download">
+                    <a href="#" class="app-button">
+                        <i class="fab fa-apple"></i>
+                        <span>
+                            <span class="small-text">Descarga en</span>
+                            <span class="big-text">App Store</span>
+                        </span>
+                    </a>
+                    <a href="#" class="app-button">
+                        <i class="fab fa-google-play"></i>
+                        <span>
+                            <span class="small-text">Disponible en</span>
+                            <span class="big-text">Google Play</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces rápidos</h4>
+                <a href="#"><i class="fas fa-angle-right"></i> Hoteles</a>
+                <a href="#"><i class="fas fa-angle-right"></i> Vuelos</a>
+                <a href="#"><i class="fas fa-angle-right"></i> Paquetes</a>
+                <a href="#"><i class="fas fa-angle-right"></i> Ofertas</a>
+                <a href="#"><i class="fas fa-angle-right"></i> Actividades</a>
+            </div>
+            <div class="footer-section">
+                <h4>Información</h4>
+                <a href="#"><i class="fas fa-angle-right"></i> Sobre nosotros</a>
+                <a href="#"><i class="fas fa-angle-right"></i> Términos y condiciones</a>
+                <a href="#"><i class="fas fa-angle-right"></i> Política de privacidad</a>
+                <a href="#"><i class="fas fa-angle-right"></i> Preguntas frecuentes</a>
+                <a href="#"><i class="fas fa-angle-right"></i> Contacto</a>
+            </div>
+            <div class="footer-section">
+                <h4>Métodos de pago</h4>
+                <div class="payment-methods">
+                    <div class="payment-method"><i class="fab fa-cc-visa"></i></div>
+                    <div class="payment-method"><i class="fab fa-cc-mastercard"></i></div>
+                    <div class="payment-method"><i class="fab fa-cc-amex"></i></div>
+                    <div class="payment-method"><i class="fab fa-cc-paypal"></i></div>
+                </div>
+                <h4 class="social-title">Síguenos</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Volar. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget">
+        <div class="chat-button">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h3>Asistencia en línea</h3>
+                <button class="close-chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages">
+                <div class="message bot">
+                    ¡Hola! Soy tu asistente virtual. ¿En qué puedo ayudarte hoy?
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Escribe tu mensaje aquí...">
+                <button class="send-message"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Results Modal -->
+    <div class="search-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Resultados de búsqueda</h3>
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="loading-animation">
+                    <div class="spinner"></div>
+                    <p>Buscando las mejores ofertas para ti...</p>
+                </div>
+                <div class="search-results" style="display: none;">
+                    <!-- Results will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
